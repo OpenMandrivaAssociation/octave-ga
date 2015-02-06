@@ -3,7 +3,7 @@
 Summary:	Genetic optimization tools for Octave
 Name:		octave-%{pkgname}
 Version:	0.9.8
-Release:        3
+Release:        4
 Source0:	%{pkgname}-%{version}.tar.gz
 License:	GPLv2+
 Group:		Sciences/Mathematics
