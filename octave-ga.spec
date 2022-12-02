@@ -4,10 +4,10 @@ Summary:	Genetic optimization tools for Octave
 Name:		octave-%{octpkg}
 Version:	0.10.3
 Release:	1
-Source0:	http://downloads.sourceforge.net/octave/%{octpkg}-%{version}.tar.gz
+Source0:	https://downloads.sourceforge.net/octave/%{octpkg}-%{version}.tar.gz
 License:	GPLv3+
 Group:		Sciences/Mathematics
-Url:		https://octave.sourceforge.io/%{octpkg}/
+Url:		https://packages.octave.org/%{octpkg}/
 BuildArch:	noarch
 
 BuildRequires:	octave-devel >= 3.4.0
@@ -19,8 +19,6 @@ Requires(postun): octave
 
 %description
 Genetic optimization tools for Octave.
-
-This package is part of community Octave-Forge collection.
 
 %files
 %license COPYING
