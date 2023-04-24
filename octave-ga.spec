@@ -1,21 +1,22 @@
 %global octpkg ga
 
 Summary:	Genetic optimization tools for Octave
-Name:		octave-%{octpkg}
+Name:		octave-ga
 Version:	0.10.3
-Release:	1
-Source0:	https://downloads.sourceforge.net/octave/%{octpkg}-%{version}.tar.gz
+Release:	2
 License:	GPLv3+
 Group:		Sciences/Mathematics
-Url:		https://packages.octave.org/%{octpkg}/
-BuildArch:	noarch
+Url:		https://packages.octave.org/ga/
+Source0:	https://downloads.sourceforge.net/octave/ga-%{version}.tar.gz
 
-BuildRequires:	octave-devel >= 3.4.0
+BuildRequires:  octave-devel >= 3.4.0
 
 Requires:	octave(api) = %{octave_api}
 
 Requires(post): octave
 Requires(postun): octave
+
+BuildArch:	noarch
 
 %description
 Genetic optimization tools for Octave.
@@ -30,9 +31,6 @@ Genetic optimization tools for Octave.
 
 %prep
 %autosetup -p1 -n %{octpkg}-%{version}
-
-# remove backup files
-#find . -name \*~ -delete
 
 %build
 %octave_pkg_build
