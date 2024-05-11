@@ -2,8 +2,8 @@
 
 Summary:	Genetic optimization tools for Octave
 Name:		octave-ga
-Version:	0.10.3
-Release:	2
+Version:	0.10.4
+Release:	1
 License:	GPLv3+
 Group:		Sciences/Mathematics
 Url:		https://packages.octave.org/ga/
